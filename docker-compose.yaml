@@ -1,0 +1,18 @@
+version: '3'
+services:
+    application_1:
+        build:
+            context: "./Application_1"
+            dockerfile: ./builds/Dockerfile.dev
+        ports:
+            - "8000:8000"
+        volumes: 
+            - ./Application_1/:/opt
+    application_2:
+        build:
+            context: "./Application_2"
+            dockerfile: ./builds/Dockerfile.dev
+        ports:
+            - "8001:8001"
+        volumes: 
+            - ./Application_2/:/opt
