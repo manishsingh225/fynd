@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    html = f"<h3>Application 1</h3>"
+    html = f"<h3>Application 1 ingress</h3>"
     return html.format(format)
 
 
