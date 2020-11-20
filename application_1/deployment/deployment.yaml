@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: app1
-        image: gcr.io/golden-memory-292205/app1_fynd:v2
+        image: manish225/fynd_app1:f1
         
         imagePullPolicy: Always  
         env:
