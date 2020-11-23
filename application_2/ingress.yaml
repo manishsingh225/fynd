@@ -9,8 +9,12 @@ spec:
   rules:
   - http:
       paths:
-      - path: /
+      - path: /myPodInfo
         backend:
           serviceName: app2
           servicePort: 8001
 
+      - path: /
+        backend:
+          serviceName: app2
+          servicePort: 8001
